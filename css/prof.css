@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Criando variáveis no CSS para ser utilizada e fácil manutenção */
+:root {
+    --preto: rgb(63, 63, 63);
+    --branco: white;
+    --verde: rgb(167, 255, 167);
+}
+
+/*estilizando o header da página*/
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--preto);
+}
+.logo-menu{
+    display: flex;
+}
+.logo-menu > img {
+    height: 60px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu > li {
+    padding: 10px;
+}
+.botoes-menu{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}   
+a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+}
+.botao-branco{
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+.botao-preto{
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Estilizando o Main (Corpo principal da pg) */
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+main > img {
+    width: 100%;
+}
