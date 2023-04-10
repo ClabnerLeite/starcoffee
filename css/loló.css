@@ -1,0 +1,77 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*criando variavies para facil manutenção */
+
+:root 
+{
+    --preto: black;
+    --branco: white;
+    --verde:rgb(167,255,167);
+}
+
+.cabecalho
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+@media(max-width:650px)
+{
+    .cabecalho
+    {
+        flex-direction: column;
+        background-color: var(--verde);
+        color: var(--branco);
+       
+    }
+
+}
+
+.logo-menu
+{
+    display: flex;
+}
+
+.logo-menu > img
+{
+    height: 60px;
+}
+
+.menu
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > li
+{
+    padding: 10px;
+}
+
+.botoes-menu
+{
+    display: flex;
+    align-items: center;
+}
+
+li
+{
+    list-style-type: none;
+    display: flex;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+}
